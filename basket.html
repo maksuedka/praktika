@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Интернет-магазин штанов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="basket">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="jeans.html">Джинсы</a></li>
+                <li><a href="shorts.html">Шорты</a></li>
+                <li><a href="classic.html">Классические брюки</a></li>
+                <li><a href="basket.html">Корзина</a></li>
+                <li><a href="info.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="cart">
+            <h2>Корзина</h2>
+
+            <div class="cart-items">
+               <!-- Товары будут добавляться сюда динамически -->
+            </div>
+
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <h3>Итого</h3>
+                <p>Общая стоимость: <span id="total-price">0</span> руб.</p>
+                <button id="checkout-button">Оформить заказ</button>
+            </div>
+
+            <div class="cart-empty">
+                <p>Ваша корзина пуста.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 «Pants for mаn»</p>
+    </footer>
+
+    <script src="script/basket.js"></script> 
+</body>
+</html>
